@@ -27,7 +27,7 @@ export default function App() {
 
            <div className="max-w-3xl">
             <p className="text-sm tracking-wide text-zinc-500">
-              BSc IT · Vereeniging, South Africa
+              BSc IT · Vereeniging, Gauteng, South Africa
             </p>
 
             <h1 className="mt-4 text-7xl font-bold leading-none tracking-tight">
@@ -65,19 +65,33 @@ export default function App() {
 
         {/* ABOUT (next section to create scroll) */}
         <section id="about" className="py-24 border-t border-zinc-100">
-          <h2 className="text-3xl font-bold tracking-tight">About</h2>
+          <div className="max-w-3xl">
+            <h2 className="text-3xl font-bold tracking-tight">About</h2>
 
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-zinc-600">
-            I’m Monica Serwala, a BSc IT graduate based in Vereeniging, South Africa.
-            I enjoy building clean, user-friendly products with strong backend foundations —
-            from scalable APIs to data pipelines that turn raw data into useful insights.
-          </p>
+            <div className="mt-4 h-1 w-16 bg-gradient-to-r from-rose-500 to-purple-500 rounded-full" />
 
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-zinc-600">
-            Currently building: <span className="font-medium text-zinc-800">JobTracker</span> (SaaS in progress).
-          </p>
+            <p className="mt-6 text-lg leading-relaxed text-zinc-700">
+              I am Monica Serwala, based in Vereeniging, Gauteng, South Africa. I build software that is simple to use,
+              but solid underneath - especially on the backend.
+            </p>
+
+            <p className="mt-4 text-lg leading-relaxed text-zinc-700">
+              I like working with APIs, databases, and data-driven systems. I enjoy cleaning up messy logic
+              and building apps that make sense.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <span className="rounded-full border border-rose-200 bg-rose-50 px-4 py-2 text-sm text-rose-700">
+                Full-Stack Certificate
+              </span>
+              <span className="rounded-full border border-purple-200 bg-purple-50 px-4 py-2 text-sm text-purple-700">
+                JavaScript Certificate
+              </span>
+            </div>
+          </div>
         </section>
 
+        {/*Skills section*/}
        <section
           id="skills"
           className="py-28 bg-gradient-to-br from-rose-30  to-rose-100">
@@ -145,18 +159,20 @@ export default function App() {
               Featured Projects
             </h2>
 
+            <div className="mt-4 h-1 w-16 bg-gradient-to-r from-rose-500 to-purple-500 rounded-full" />
+
             <div className="mt-16 space-y-20">
               {/* Project cards will go here */}
               <div className="border-b border-zinc-500 pb-16">
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  JobTracker — SaaS Application Management Platform
+                  JobTracker - SaaS Application Management Platform
                 </h3>
 
                 <p className="mt-6 max-w-3xl text-lg text-zinc-600 leading-relaxed">
                   A full-stack web application designed to help users track and manage job applications in a structured way.
                 </p>
 
-                <div className="mt-8 space-y-3 text-zinc-800">
+                <div className="mt-8 space-y-3 text-zinc-900 font-medium">
                   <p>• RESTful API built with ASP.NET Core</p>
                   <p>• Layered architecture (Controllers, Services, Data Access)</p>
                   <p>• Database integration using Entity Framework Core</p>
@@ -175,11 +191,11 @@ export default function App() {
                 </div>
               </div>
 
-              
+              {/*second project*/}
 
               <div className="border-b border-zinc-500 pb-16">
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  Diabetes Classification — Machine Learning Project
+                  Diabetes Classification - Machine Learning Project
                 </h3>
 
                 <p className="mt-6 max-w-3xl text-lg text-zinc-600 leading-relaxed">
@@ -195,7 +211,7 @@ export default function App() {
 
                 <div className="mt-8 flex gap-6 text-sm font-medium">
                   <a
-                    href="YOUR_DIABETES_GITHUB_LINK"
+                    href="https://github.com/monica-serwala/ITRI616-Diabetes-Classification.git"
                     target="_blank"
                     className="text-rose-600 hover:underline"
                   >
@@ -208,7 +224,7 @@ export default function App() {
               {/*third project*/}
               <div>
                 <h3 className="text-2xl font-semibold tracking-tight">
-                  Encryption Desktop Application — Vernam Cipher Implementation
+                  Encryption Desktop Application - Vernam Cipher Implementation
                 </h3>
 
                 <p className="mt-6 max-w-3xl text-lg text-zinc-600 leading-relaxed">
@@ -224,7 +240,36 @@ export default function App() {
 
                 <div className="mt-8 flex gap-6 text-sm font-medium">
                   <a
-                    href="YOUR_CRYPTO_GITHUB_LINK"
+                    href="https://github.com/monica-serwala/ITRI615-Cryptography-Project.git"
+                    target="_blank"
+                    className="text-rose-600 hover:underline"
+                  >
+                    View Code
+                  </a>
+                </div>
+              </div>
+
+              <div className="py-16 border-t border-zinc-200">
+                <h3 className="text-2xl font-semibold tracking-tight">
+                  Telemetry Management REST API - RESTful Backend Service
+                </h3>
+
+                <p className="mt-6 max-w-3xl text-lg text-zinc-600 leading-relaxed">
+                  A RESTful API built to manage and track telemetry data for automation projects,
+                  including time and cost savings per project and client.
+                </p>
+
+                <ul className="mt-8 space-y-3 text-zinc-900 font-medium">
+                  <li>• Built RESTful endpoints using ASP.NET Core</li>
+                  <li>• Implemented full CRUD operations</li>
+                  <li>• Structured layered architecture (Controllers, Services, Repositories)</li>
+                  <li>• Integrated Entity Framework Core for database management</li>
+                  <li>• Hosted on Azure</li>
+                </ul>
+
+                <div className="mt-8 flex gap-6 text-sm font-medium">
+                  <a
+                    href="https://github.com/monica-serwala/telemetry-management-rest-api"
                     target="_blank"
                     className="text-rose-600 hover:underline"
                   >
@@ -239,14 +284,56 @@ export default function App() {
         </section>
 
         {/* CONTACT (anchor for button) */}
-        <section id="contact" className="py-24 border-t border-zinc-100">
-          <h2 className="text-3xl font-bold tracking-tight">Contact</h2>
-          <p className="mt-6 text-lg text-zinc-600">
-            Email: <a className="text-rose-600 hover:underline" href="mailto:your.email@example.com">
-              your.email@example.com
-            </a>
-          </p>
-        </section>
+        <footer id="contact" className="mt-16 border-t border-zinc-200">
+          <div className="max-w-6xl mx-auto px-6 py-12">
+
+            {/* Top Label */}
+            <h2 className="text-3xl font-bold bg-gradient-to-r from-rose-500 to-purple-500 bg-clip-text text-transparent">
+              Contact
+            </h2>
+
+            {/* Bottom Row */}
+            <div className="mt-6 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+
+              <p className="text-sm text-zinc-600">
+                Open to software engineering and data opportunities.
+              </p>
+
+              <div className="flex items-center gap-6 text-sm font-medium">
+                <a
+                  href="mailto:serwalam@gmail.com"
+                  className="text-rose-600 hover:text-rose-700 transition"
+                >
+                  Email
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/monica-serwala"
+                  target="_blank"
+                  className="hover:text-rose-600 transition"
+                >
+                  LinkedIn
+                </a>
+
+                <a
+                  href="https://github.com/monica-serwala"
+                  target="_blank"
+                  className="hover:text-rose-600 transition"
+                >
+                  GitHub
+                </a>
+              </div>
+
+            </div>
+
+            <div className="mt-12 text-center text-xs text-zinc-500">
+              © {new Date().getFullYear()} Monica Serwala
+            </div>
+
+          </div>
+        </footer>
+
+
       </main>
     </div>
   );

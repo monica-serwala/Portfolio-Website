@@ -35,10 +35,10 @@ export default function Navbar() {
 
                     {/* Navigation Links */}
                     <div className="flex gap-8 text-sm font-medium text-zinc-700">
-                        <span className="hover:text-rose-500 transition-colors">About</span>
-                        <span className="hover:text-rose-500 transition-colors">Projects</span>
-                        <span className="hover:text-rose-500 transition-colors">Skills</span>
-                        <span className="hover:text-rose-500 transition-colors">Contact</span>
+                        <a href="#about" className="hover:text-rose-500 transition-colors">About</a>
+                        <a href="#projects" className="hover:text-rose-500 transition-colors">Projects</a>
+                        <a href="#skills" className="hover:text-rose-500 transition-colors">Skills</a>
+                        <a href="#contact" className="hover:text-rose-500 transition-colors">Contact</a>
                     </div>
 
                     {/* CV Button */}
